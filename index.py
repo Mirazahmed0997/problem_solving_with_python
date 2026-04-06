@@ -14,4 +14,12 @@ def check(age):
 age= int(input("Enter your age : "))
 check(age)
 
-help(check)
+# help(check)
+
+
+def set(*args):
+    for i in args:
+        print(i)
+
+
+set(12,32,43)
