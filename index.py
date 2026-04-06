@@ -23,3 +23,11 @@ def set(*args):
 
 
 set(12,32,43)
+
+
+def set(**kwargs):
+    for key,value in kwargs.items():
+        print(f"{key}: {value}")
+
+
+set(a=12,b=32,c=43,n_estimator=5)
