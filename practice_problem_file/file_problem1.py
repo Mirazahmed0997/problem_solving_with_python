@@ -25,6 +25,9 @@ with open("text.txt","r") as file:
     print(f'Total words :  {total_words}')
     print(f'Total Character : {total_char}')
 
+    with open('counter_of_strings.txt',"w") as file:
+        file.write(f"Total Line : {total_Lines}\nTotal words :  {total_words}\nTotal Character : {total_char}\n")
+
 
 
 
