@@ -4,12 +4,15 @@ from functools import reduce
 with open("text.txt","r") as file:
     # lines= file.read()
     strings= file.readlines()
+    print(strings)
     total_Lines=len(strings)
 
      
     
-    words = list(map(str.strip,strings))
-    filter_words= list(filter(lambda x: len(x)>=1,words))
+    words = list(map(str.strip,strings)) #Its Eleminate "\n"
+    print("Words : ", words)
+    filter_words= list(filter(lambda x: len(x)>=1,words)) #filter empty strings
+    print("Filter_words :",filter_words)
 
     num_of_words= list(map(lambda x :len(x.split(" ")),filter_words))
 
@@ -29,7 +32,4 @@ with open("text.txt","r") as file:
         file.write(f"Total Line : {total_Lines}\nTotal words :  {total_words}\nTotal Character : {total_char}\n")
 
 
-
-
-
-
+    
