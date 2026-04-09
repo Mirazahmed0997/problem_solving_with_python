@@ -2,8 +2,6 @@ import pandas as pd
 
 df=pd.DataFrame({'list':[1,2,3,4,5,6,7,8,9,10]})
 
-
-
 evens= pd.Series(filter(lambda x: x%2==0,df['list']))
 
 sqr_even= evens.map(lambda x: x*x)

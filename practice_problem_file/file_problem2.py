@@ -7,5 +7,3 @@ with open('sample_file.txt',"w+") as file:
     file.truncate(5)
     file.seek(0)
     print(file.read())
-    
-
