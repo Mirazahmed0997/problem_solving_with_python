@@ -7,9 +7,9 @@ class Phone:
         self.camera=camera
         self.batter_percentage=batter_percentage
     def charge(self,hour):
-        self.charge += hour
+        self.batter_percentage += hour
     def capture(self,photo):
-        if(self.batter_percentage <=0):
+        if(self.batter_percentage <=10):
             print("Insufficient Charge")
         else:
             self.batter_percentage-= photo
@@ -19,6 +19,3 @@ class Phone:
 apple= Phone("Iphone 8","3500mh","40pixel")
 
 
-
-apple.capture(20)
-print(apple.batter_percentage)
