@@ -6,3 +6,4 @@ else:
     print(file.read())
 finally:
     print("GPU is stopped")
+
